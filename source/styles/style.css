@@ -3,6 +3,7 @@
 * {
     outline: none;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -880,4 +881,171 @@ overview-card:hover svg {
 .detail-page .job-cards,
 .detail-page .searched-bar {
     display: none;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1300px) {
+    .detail-page .search-type {
+        display: none;
+    }
+
+    .detail-page .searched-jobs {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+    .explain-contents,
+    .explain-bar {
+        height: auto;
+    }
+
+    .explain-bar {
+        flex-wrap: wrap;
+        padding-bottom: 14px;
+    }
+
+    .explain-contents {
+        width: 50%;
+    }
+
+    .explain-contents+.explain-contents {
+        padding: 0;
+        border: 0;
+    }
+
+    .explain-contents:nth-child(2)~.explain-contents {
+        margin-top: 16px;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .job-subtitle-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .job-subtitle-wrapper .posted {
+        margin-left: 0;
+        margin-top: 6px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+
+    .search-job,
+    .search-salary {
+        display: none;
+    }
+
+    .search-bar {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .detail-page .job-overview-cards {
+        display: none;
+    }
+
+    .user-name {
+        display: none;
+    }
+
+    .user-profile {
+        margin-right: 0;
+    }
+
+    .job-explain {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .search-type {
+        display: none;
+    }
+
+    .searched-jobs {
+        padding-left: 0;
+    }
+
+    .search-menu div:not(:last-of-type) {
+        border: 0;
+    }
+
+    .job-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-location {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .job-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header-menu a:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .header-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .search.item {
+        display: none;
+    }
+
+    .search-bar {
+        flex-grow: 1;
+    }
+
+    .search-bar input {
+        padding: 0 0 0 30px;
+    }
+
+    .search-button {
+        margin-left: 16px;
+    }
+
+    .searched-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .searched-sort {
+        margin-top: 5px;
+    }
+
+    .main-container {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .explain-contents {
+        width: 100%;
+        margin: 0;
+    }
+
+    .explain-contents:nth-child(2)~.explain-contents {
+        margin: 0;
+        border: 0;
+    }
+
+    .wrapper {
+        padding: 20px;
+    }
+
+    .header {
+        padding: 0 20px;
+    }
 }

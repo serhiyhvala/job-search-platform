@@ -69,7 +69,7 @@ body {
 }
 
 /* Dark Mode */
-.dark-light svg{
+.dark-light svg {
     margin-right: 8px;
     width: 22px;
     cursor: pointer;
@@ -77,26 +77,31 @@ body {
     transition: 0.5s;
 }
 
-.dark-mode .dark-light svg{
+.dark-mode .dark-light svg {
     fill: #ffce45;
     stroke: #ffce45;
 }
-.dark-mode .job-card svg{
+
+.dark-mode .job-card svg {
     box-shadow: none;
 }
-.dark-mode .search.item{
+
+.dark-mode .search.item {
     color: var(--body-color);
     border-color: var(--body-color);
 }
+
 .dark-mode .search-location svg,
 .dark-mode .search-job svg,
 .dark-mode .search-salary svg {
-  color: var(--body-color);
+    color: var(--body-color);
 }
+
 .dark-mode .detail-button {
-  background-color: var(--inactive-color);
-  color: var(--subtitle-color);
+    background-color: var(--inactive-color);
+    color: var(--subtitle-color);
 }
+
 /* ======= */
 .job {
     display: flex;
@@ -281,28 +286,6 @@ body {
     color: var(--button-color);
     cursor: pointer;
     margin-left: auto;
-}
-
-.search.item {
-    position: absolute;
-    top: 10px;
-    left: 25px;
-    font-size: 13px;
-    color: var(--active-color);
-    border: 1px solid var(--search-border-color);
-    padding: 8px 10px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-}
-
-.search.item svg {
-    width: 12px;
-    margin-left: 5px;
-}
-
-.search.item:last-child {
-    left: 185px;
 }
 
 /* MAIN CONTAINER */

@@ -25,6 +25,21 @@
     --button-color: #fff;
 }
 
+/* Dark Mode */
+.dark-mode {
+    --body-bg-color: #1d1d1d;
+    --theme-bg-color: #13131a;
+    --header-bg-color: #1c1c24;
+    --alert-bg-color: #292932;
+    --body-color: #fff;
+    --inactive-color: #292932;
+    --time-button: #fff;
+    --level-button: #fff;
+    --active-light-color: #263d63;
+    --border-color: #26262f;
+    --search-border-color: #26262f;
+}
+
 ::-moz-placeholder {
     color: var(--placeholder-color);
 }
@@ -53,6 +68,36 @@ body {
     color: var(--body-color);
 }
 
+/* Dark Mode */
+.dark-light svg{
+    margin-right: 8px;
+    width: 22px;
+    cursor: pointer;
+    fill: transparent;
+    transition: 0.5s;
+}
+
+.dark-mode .dark-light svg{
+    fill: #ffce45;
+    stroke: #ffce45;
+}
+.dark-mode .job-card svg{
+    box-shadow: none;
+}
+.dark-mode .search.item{
+    color: var(--body-color);
+    border-color: var(--body-color);
+}
+.dark-mode .search-location svg,
+.dark-mode .search-job svg,
+.dark-mode .search-salary svg {
+  color: var(--body-color);
+}
+.dark-mode .detail-button {
+  background-color: var(--inactive-color);
+  color: var(--subtitle-color);
+}
+/* ======= */
 .job {
     display: flex;
     flex-direction: column;

@@ -175,6 +175,7 @@ body {
     position: absolute;
     content: '';
     width: 7px;
+    height: 7px;
     border-radius: 50%;
     border: 2px solid var(--header-bg-color);
     right: 6px;

@@ -666,10 +666,11 @@ overview-card:hover svg {
     display: flex;
     align-items: center;
     margin-top: 12px;
+    justify-content: space-between;
 }
 
 .job-overview-buttons .search-buttons {
-    background-color: var(--inactive-color);
+    background-color: #b9b9b9;
     font-size: 11px;
     padding: 6px 8px;
     margin-top: 0;
